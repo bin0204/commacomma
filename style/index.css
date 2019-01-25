@@ -13,7 +13,7 @@ body {
   /* Full height image header */
   background-position: center;
   background-size: cover;
-  background-image: url("/Users/seobin/Desktop/commacomma/image/mainpage.jpg");
+  background-image: url("image/mainpage.jpg");
 }
 
 .main_logo img{
