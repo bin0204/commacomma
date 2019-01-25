@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
 body, html {
   width: 100%;
@@ -13,7 +13,7 @@ body {
   /* Full height image header */
   background-position: center;
   background-size: cover;
-  background-image: url(image/mainp.jpg);
+  background-image: url('image/mainp.png');
 
 }
 
