@@ -13,7 +13,7 @@ body {
   /* Full height image header */
   background-position: center;
   background-size: cover;
-  background-image: url("https://bin0204.github.io/image/mainp.jpg");
+  background-image: url(image/mainp.jpg);
 
 }
 
