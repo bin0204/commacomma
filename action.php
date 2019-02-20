@@ -1,20 +1,20 @@
-
-
 <?php
-if(isset($_POST['submit'])) {
+
+if (isset($_POST['submit'])) {
   $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $mailFrom = $_POST['mail'];
   $message = $_POST['message'];
   $telephone = $_POST['telephone'];
-  $email = $_POST['email'];
-  $formcontent = "From: $name \n 내용: $message \n 전화번호: $telephone";
-  $recipient = "seobin1026@gmail.com";
-  $subject = "Contact Form";
-  $mailheader = "From: $email \r\n";
-  mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-  //echo "Thank You!" . " -" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
-  // header('Location: /contact.html');
-  echo $_SERVER['PHP_SELF'];
-  ?>
+
+  $mailTo = "seobin1026@gmail.com";
+  $headers = "From: ".$mailFrom;
+  $txt = "You have received an e-mail from ".$name.".\n\n".$message.".\n\n".$telephone;
+  mail($mailTo, $subject, $txt, $headers);
+  // echo '<p>SEND</p>';
+} else {
+  echo '<p>Something went wrong, go back and try again!</p>';
 }
+  // header("Location: index.php?mailsend");
 
 ?>
